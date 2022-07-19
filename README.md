@@ -13,4 +13,18 @@ I also made sure my columns were in the right data type.
 ## Data Preprocessing
 I noticed the location columns contained cities, states and countries so i split them using the "split by delimiter function"(since i needed the countries). In the newly created column, i discovered there were variations of spellings and USA was represented by its states. I cleaned this up using Fuzzy Clustering in Power query and replacing the states with country. You can find the power query scipt here.
 
-To get the causes of crashes from my Summary column, I had to 
+To get the causes of crashes from my Summary column, I extracted the keywords from the column and used conditional column to group them into:
+Mechanical Failure: invovling causes due to engine propeller or wing failure.
+Weather conditions: includes crashes affected by any form of weather e.g rain, storm, fog etc.
+Pilot error: involves loss of control.
+Struck an Object: plane crashed into/or struck a mountain, tree etc.
+Shot down: plane crashing due to being shot at
+Fire Outbreak: plan crashed due to explosion or sudden fire.
+Collision: airplanes collliding.
+Fuel: crash caused by low fuel
+Unknown causes
+
+You can also find the scripts here.
+
+ ## Data Analysis & Visualiztions.
+ 1. Crashes through the years 
