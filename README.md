@@ -27,5 +27,7 @@ To get the causes of crashes from the Summary column, I extracted the keywords f
 You can also find the scripts here.
 
  ## Data Analysis & Visualizations.
- 1. Crashes through the years: crashes kept incresing from 1908 has more aircrafts were produced and airlines came into the industry. In recnt years there isa decrese in the crashes which can be drawn to more technological advancements.
- 2. Crashes through the months: December had the highest number of crashes followed after by January.
+1. Crashes over the years: crashes kept increasing from 1908 as more aircrafts were produced and airlines came into the industry. In recent years there is a decrese in the crashes which can be drawn to more technological advancements.
+2. Crashes over the months: December had the highest number of crashes followed after by January.
+3. Most crashed aircraft is the Douglas Dc 3.
+You can find other insights from the dashboard.
