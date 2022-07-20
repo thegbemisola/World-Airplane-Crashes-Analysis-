@@ -57,3 +57,4 @@ Also, The US Airforce accounted for 22.54% of total Military aviation crashes.
 
 ![fatalities](https://user-images.githubusercontent.com/61963973/179996370-b5e6c9d4-0566-4b41-8d9f-d9ab5364ab71.png)
 
+[View dashboard here](https://github.com/thegbemisola/World-Airplane-Crashes-Analysis-/blob/main/Dashboard.pdf)
