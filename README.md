@@ -47,5 +47,8 @@ For Military Aviation, the highest year of crash was in 1945(marked the end of W
 ![crash by airline](https://user-images.githubusercontent.com/61963973/179962355-3d7fb8cb-7180-41a9-bc81-7faec8d3acda.png)
 
 4. The most Crashed aircraft was the Douglas DC 3. 
+
+![type crash](https://user-images.githubusercontent.com/61963973/179962823-62d774b1-dd41-49c8-ab61-fdddbdf884f8.png)
+
 5. 
 
