@@ -42,7 +42,7 @@ Lastly, I made a column to group each operator into  Civil or Military Aviation
 1. Crashes over the years: crashes kept increasing from 1908 as more aircrafts were produced and airlines came into the industry. In recent years, there is a decrease in the crashes which can be drawn to technological advancements.
 For Military Aviation, the highest year of crash was in 1945(marked the end of World War II).
 
-![Total Crash](https://user-images.githubusercontent.com/61963973/179972863-3a8c270b-4da3-40e6-be12-2b8e8d7dc51c.png)
+![Total Crash](https://user-images.githubusercontent.com/61963973/179996906-58133794-c1fa-4099-9051-318d2da12c66.png)
 
 2. Aeroflot and The US Air force had the top most crashes. Aeroflot is Russia largest airline and one of the oldest airlines. 
 Also, The US Airforce accounted for 22.54% of total Military aviation crashes.
