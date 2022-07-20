@@ -10,6 +10,8 @@ The dataset contained 5268 cases of crashes and 13 columns which included inform
 After importing my data into power query, I checked for duplicates(found none),the validity of my data using column distribution, quality and profiling and removed columns not neccessary for my analysis.
 I also made sure my columns were in the right data type.
 
+![data cleaning](https://user-images.githubusercontent.com/61963973/179928540-19561e60-79c2-460b-8de6-4661b1e398c1.png)
+
 ## Data Preprocessing
 I noticed the location column contained cities, states and countries so i split them using the "split by delimiter function"(since i needed the countries). In the newly created column, i discovered there were variations of spellings and USA was represented by its states. I cleaned this up using Fuzzy Clustering in Power query and replacing the states with country. You can find the power query scipt here.
 
