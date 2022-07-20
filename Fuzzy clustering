@@ -1,0 +1,20 @@
+let
+    Source = Csv.Document(File.Contents(Filepath),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Date", type text}, {"Time", type text}, {"Location", type text}, {"Operator", type text}, {"Flight #", type text}, {"Route", type text}, {"Type", type text}, {"Registration", type text}, {"cn/In", type text}, {"Aboard", Int64.Type}, {"Fatalities", Int64.Type}, {"Ground", Int64.Type}, {"Summary", type text}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Flight #", "Route", "Registration", "cn/In", "Time"}),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Removed Columns",{{"Date", type date}}),
+    #"Split Column by Delimiter" = Table.SplitColumn(#"Changed Type1", "Location", Splitter.SplitTextByEachDelimiter({","}, QuoteStyle.None, true), {"Location.1", "Location.2"}),
+    #"Changed Type2" = Table.TransformColumnTypes(#"Split Column by Delimiter",{{"Location.1", type text}, {"Location.2", type text}}),
+    #"Added Conditional Column" = Table.AddColumn(#"Changed Type2", "Sector", each if [Operator] = "" then "" else if Text.Contains([Operator], "Military") then "Military Aviation" else "Civil Aviation"),
+    #"Changed Type3" = Table.TransformColumnTypes(#"Added Conditional Column",{{"Sector", type text}}),
+    #"Fuzzy" = Table.AddFuzzyClusterColumn(#"Changed Type3", "Location.2", "State/Country",[IgnoreCase =true, IgnoreSpace=true]),
+    #"Added Custom" = Table.AddColumn(Fuzzy, "Country", each List.Accumulate(
+    List.Numbers(0, Table.RowCount(replacements)),
+    [#"State/Country"],
+    (state, current) =>
+    Text.Replace(state, replacements[Find]{current},
+    replacements[Replace]{current}))),
+    #"Changed Type4" = Table.TransformColumnTypes(#"Added Custom",{{"Country", type text}})
+in
+    #"Changed Type4"
