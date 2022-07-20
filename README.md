@@ -6,7 +6,7 @@ This project is my capstone project for [#30daysoflearning](https://techcommunit
 I analyzed a dataset from [kaggle](https://www.kaggle.com/datasets/saurograndi/airplane-crashes-since-1908) about airplane crashes and fatalities around the world from a period of 1908-2009.
 The dataset contained 5268 cases of crashes and 13 columns which included information about date of crash,  number of people aboard, fatalities, location, its operator/airline,type of aircraft and a summary of the cause of the crash.
 
-![Raw data](https://user-images.githubusercontent.com/61963973/179928996-b7d474f1-14f1-460e-abc2-806bf6d9cb79.png)
+![Raw data](https://user-images.githubusercontent.com/61963973/179941566-2745fe26-fc19-4739-9d28-21967ba4b025.png)
 
 ## Data Cleaning 
 After importing my data into power query, I checked for duplicates(found none),the validity of my data using column distribution, quality and profiling and removed columns not neccessary for my analysis.
