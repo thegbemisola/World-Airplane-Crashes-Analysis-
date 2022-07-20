@@ -15,11 +15,11 @@ I also made sure my columns were in the right data type.
 ![data cleaning](https://user-images.githubusercontent.com/61963973/179928540-19561e60-79c2-460b-8de6-4661b1e398c1.png)
 
 ## Data Preprocessing
-I noticed the location column contained cities, states and countries so i split them using the "split by delimiter function"(since i needed the countries). In the newly created column, i discovered there were variations of spellings and USA was represented by its states. I cleaned this up using Fuzzy Clustering in Power query and replacing the states with country. You can find the power query scipt here.
+I noticed the location column contained cities, states and countries so i split them using the "split by delimiter function"(since i needed the countries). In the newly created column, i discovered there were variations of spellings and USA was represented by its states. I cleaned this up using Fuzzy Clustering in Power query and replacing the states with country. You can find the power query script [here](https://github.com/thegbemisola/World-Airplane-Crashes-Analysis-/blob/main/Fuzzy%20clustering).
 
 ![Data Processing](https://user-images.githubusercontent.com/61963973/179937153-e768d379-a1d4-4d4f-9fdc-c13742d57e8b.png)
 
-To get the causes of crashes from the Summary column, I extracted the keywords(see sript [here](https://github.com/thegbemisola/World-Airplane-Crashes-Analysis-/blob/main/Keywords)) from the column and used conditional column to group them into:
+To get the causes of crashes from the Summary column, I extracted the keywords(see script [here](https://github.com/thegbemisola/World-Airplane-Crashes-Analysis-/blob/main/Keywords)) from the column and used conditional column to group them into:
 + Mechanical Failure: involves crashes due to engine, propeller or wing failure.
 + Weather condition: includes crashes affected by any form of weather e.g rain, storm, fog etc.
 + Pilot error: involves loss of control.
