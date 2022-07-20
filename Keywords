@@ -1,5 +1,5 @@
 let
-    Source = Excel.Workbook(File.Contents("C:\Users\SUBEB\Documents\Airplane Accidents\Airplane Accidents.xlsx"), null, true),
+    Source = Excel.Workbook(File.Contents(TextdocumentFilePath), null, true),
     Airplane_Crashes_and_Fatalities_Since_1908_Table = Source{[Item="Airplane_Crashes_and_Fatalities_Since_1908",Kind="Table"]}[Data],
     #"Changed Type" = Table.TransformColumnTypes(Airplane_Crashes_and_Fatalities_Since_1908_Table,{{"Date", type date}, {"Location.1", type text}, {"Location.2", type text}, {"Operator", type text}, {"Type", type text}, {"Aboard", Int64.Type}, {"Fatalities", Int64.Type}, {"Ground", Int64.Type}, {"Summary", type text}, {"Sector", type text}, {"State/Country", type text}, {"Country", type text}}),
     #"Removed Other Columns" = Table.SelectColumns(#"Changed Type",{"Summary"}),
