@@ -53,3 +53,7 @@ Also, The US Airforce accounted for 22.54% of total Military aviation crashes.
 
 ![type crash](https://user-images.githubusercontent.com/61963973/179962823-62d774b1-dd41-49c8-ab61-fdddbdf884f8.png)
 
+4.The most fatal crash occurred on March 27, 1977 at Tenerife, Canary islands when 2 Airplanes(a KLM Boeing 747 and a Pan American 747) collided killing a total of 583 people out of 644 people on board.
+
+![fatalities](https://user-images.githubusercontent.com/61963973/179996370-b5e6c9d4-0566-4b41-8d9f-d9ab5364ab71.png)
+
