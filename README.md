@@ -15,7 +15,7 @@ I also made sure my columns were in the right data type.
 ![data cleaning](https://user-images.githubusercontent.com/61963973/179928540-19561e60-79c2-460b-8de6-4661b1e398c1.png)
 
 ## Data Preprocessing
-I noticed the location column contained cities, states and countries so i split them using the "split by delimiter function"(since i needed the countries). In the newly created column, i discovered there were variations of spellings and USA was represented by its states. I cleaned this up using Fuzzy Clustering in Power query and replacing the states with country. You can find the power query script [here](https://github.com/thegbemisola/World-Airplane-Crashes-Analysis-/blob/main/Fuzzy%20clustering).
+I noticed the location column contained cities, states and countries so i split them using the "split by delimiter function"(since i needed the countries). In the newly created column, i discovered there were variations of spellings and USA was represented by its states. I cleaned this by adding a fuzzy cluster column in Power query and replacing the states with country. You can find the power query script [here](https://github.com/thegbemisola/World-Airplane-Crashes-Analysis-/blob/main/Fuzzy%20clustering).
 
 ![Data Processing](https://user-images.githubusercontent.com/61963973/179937153-e768d379-a1d4-4d4f-9fdc-c13742d57e8b.png)
 
